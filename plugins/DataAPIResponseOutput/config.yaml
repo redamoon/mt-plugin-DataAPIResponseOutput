@@ -1,0 +1,15 @@
+id: DataAPIResponseOutput
+key: DataAPIResponseOutput
+name: <__trans phrase="DataAPI Response Output">
+version: 1.0.0
+description: <__trans phrase="_PLUGIN_DESCRIPTION">
+author_name: <__trans phrase="_PLUGIN_AUTHOR">
+author_link: https://www.redamoon.net/
+doc_link: https://github.com/redamoon/mt-plugin-DataAPIResponseOutput
+l10n_class: DataAPIResponseOutput::L10N
+
+blog_config_template: data_api_response_output_setting.tmpl
+
+tags:
+    function:
+        DataAPIResponseOutput: $dataapi_response_output::DataAPIResponseOutput::Tags::_hdlr_response_output
