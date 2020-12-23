@@ -1,6 +1,6 @@
 id: DataAPIResponseOutput
 key: DataAPIResponseOutput
-name: <__trans phrase="DataAPI Response Output">
+name: <__trans phrase="DataAPIResponseOutput">
 version: 1.0.0
 description: <__trans phrase="_PLUGIN_DESCRIPTION">
 author_name: <__trans phrase="_PLUGIN_AUTHOR">
