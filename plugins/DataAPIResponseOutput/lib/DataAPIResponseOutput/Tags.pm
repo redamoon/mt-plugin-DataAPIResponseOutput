@@ -13,12 +13,12 @@ sub _hdlr_response_output {
     my $cgi = MT->config->AdminCGIPath || MT->config->CGIPath;
     my $url = $args->{ url } || $blog->site_url;  # url 初期値 MTインストールURL
     $url = $1 if($url=~/(.*)\/$/);  # 末尾の / スラッシュ削除
-    my $dataapi = $args->{ dataapi } || $cgi . 'mt-data-api.cgi/';  # dataapi 初期値 MTインストールパス + mt-data-api.cgi
+    my $data_api = $args->{ data_api } || $cgi . 'mt-data-api.cgi/';  # data_api 初期値 MTインストールパス + mt-data-api.cgi
     my $endpoint = $args->{ endpoint } || '/sites';  # endpoint 初期値 /sites
     my $version = $args->{ version } || 'v4';  # version 初期値 v4
     my $param = $args->{ param };  # param 初期値 なし
     my $ua = LWP::UserAgent->new;
-    my $request = HTTP::Request->new(GET => $url . $dataapi . $version . $endpoint . $param);
+    my $request = HTTP::Request->new(GET => $url . $data_api . $version . $endpoint . $param);
     my $response = $ua->request($request);
     return $response->content;
 }
