@@ -3,6 +3,8 @@
 DataAPIのレスポンスを静的なJSONで出力するプラグインになります。  
 DataAPIのエンドポイントを指定することで、DataAPIのレスポンスを静的なファイルで書き出すことができます。
 
+![ScreenShot.png](artwork/ScreenShot.png)
+
 ## Requirement
 
 - Movable Type 7
