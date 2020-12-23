@@ -1,0 +1,2 @@
+# mt-plugin-DataAPIResponseOutput
+DataAPIのレスポンスを静的なJSONで出力するプラグイン
